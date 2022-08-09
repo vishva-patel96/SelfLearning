@@ -1,16 +1,17 @@
-﻿using System;
+using System;
 class MainClass
 {
     public static void Main(string[] args)
     {
-        test Test = new test();
+        test2 Test = new test2();
 
         Test.name = "ford";
         Test.year = 1115;
+        Test.number = "5646";
         Test.model();
         //Console.WriteLine(Test.model);
        
-        Console.WriteLine(Test.name + " " + Test.year);
+        Console.WriteLine(Test.name + " " + Test.year + " " + Test.number);
     }
 }
 class car//parent class
@@ -26,4 +27,8 @@ class test : car //dervied class
 {
     public string color;
     public int year;
+}
+class test2 : test
+{
+    public string number;
 }
